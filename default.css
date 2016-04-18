@@ -1,0 +1,509 @@
+body {
+	text-align: center;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: #FFFFFF;
+	font-family: Arial;
+	background: url(images/img1.gif);
+}
+
+.hidden
+{
+	visibility: hidden;
+}
+
+A:link {
+	COLOR: white; text-decoration: underline
+}
+A:visited {
+	COLOR: white; text-decoration: underline
+}
+A:active {
+	COLOR: white; text-decoration: underline
+}
+A:hover {
+	COLOR: white; text-decoration: none
+}
+
+#page_wrapper {
+	background: #AFAFAF;
+	margin-left: auto; 
+	margin-right: auto;
+	width: 960px;
+	text-align: left;
+}
+
+#page_header {
+	background: url(images/top_logo.jpg) top left no-repeat #333333;
+	height: 170px;
+	width: 960px;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+#main_nav {
+	background: black;
+	height: 28px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #000000;
+	font-size:11px;
+	background: url(images/img3.gif) repeat-x;
+}
+
+#spacer {
+	background: #000000;
+	height: 0px;
+	border-bottom: #FFFFFF solid 1px;	
+}
+
+#left_column {
+	background: #111111;
+	height: 600px;
+	border-right: #FFFFFF solid 1px;	
+	vertical-align: top;
+	width: 195px;
+}
+
+#left_column h1 {
+	font-size: 12pt;
+	margin: 5px;
+}
+
+#left_column h2 {
+	font-size: 10pt;
+	margin: 5px;
+}
+
+#left_column a {
+	text-decoration: none;
+}
+
+#left_column a:hover {
+	text-decoration: underline;
+}
+
+
+#left_column p { 
+	margin: 0px;
+} 
+
+#sc_side_nav {
+	margin-top: 0px;
+	padding-top: 25px;
+	border-bottom: #666666 solid 1px;	
+	background: url(images/navigation_header.gif) left top no-repeat;
+}
+
+#sc_side_nav ul
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	list-style: none;
+}
+
+#sc_side_nav ul li {
+	margin-left: 10px;
+	padding-left: 18px;
+	background: url(images/marker.gif) 0px 2px no-repeat;
+	font-size: 12pt;
+	}
+	
+#sc_calendar_top {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.calendar_heading {
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+.calendar_dayhead {
+	font-weight: bold;
+	font-size: 7pt;
+	width: 22px;
+}
+
+.calendar_day {
+	font-weight: bold;
+	font-size: 10pt;
+	text-align: center;
+	width: 22px;
+}
+
+.calendar_recurring {
+	font-weight: bold;
+	font-size: 10pt;
+	text-align: center;
+	background: #E1AF39;
+	color: #FFFFFF;
+	cursor: pointer;
+	width: 22px;
+}
+
+.calendar_special {
+	font-weight: bold;
+	font-size: 10pt;
+	text-align: center;
+	background: #FFFFFF;
+	color: #173259;
+	cursor: pointer;
+	width: 22px;
+}
+
+#sc_calendar_popup {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 150px;
+	background: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+#sc_calendar_popup h1 {
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0px;
+	padding: 2px;
+	background: url(images/calendar_popup_close.gif) 133px 2px no-repeat #656565;
+}
+
+#sc_calendar_popup p {
+	background: #000000;
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 4px;
+}
+
+#sc_calendar {
+	margin-top: 5px;
+	background: url(images/calendar_header.gif) left top no-repeat;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: #666666 solid 1px;	
+}
+
+#sc_calendar_date {
+	font-weight: bold;
+	font-size: 8pt;
+	text-align: left;
+	vertical-align: top;
+	margin: 1px;
+    padding: 1px;
+}
+
+#sc_calendar_text {
+	font-weight: bold;
+	font-size: 8pt;
+	text-align: left;
+	vertical-align: top;
+	margin: 1px;
+    padding: 1px;
+}
+
+#sc_announcements {
+	margin-top: 5px;
+	background: url(images/announcements_header.gif) left top no-repeat;
+	padding-top: 25px;
+	border-bottom: #666666 solid 1px;	
+}
+
+#sc_announcements ul
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	list-style: none;
+}
+
+#sc_announcements ul li {
+	margin-left: 5px;
+	padding-left: 18px;
+	padding-right: 5px;
+	background: url(images/marker.gif) 0px 2px no-repeat;
+	font-size: 9pt;
+	font-weight: bold;
+	}
+
+#sc_past_events {
+	margin-top: 5px;
+	background: url(images/past_events_header.gif) left top no-repeat;
+	padding-top: 25px;
+	border-bottom: #666666 solid 1px;	
+}
+
+#sc_past_events ul
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	list-style: none;
+}
+
+#sc_past_events ul li {
+	margin-left: 5px;
+	padding-left: 18px;
+	padding-right: 5px;
+	background: url(images/marker.gif) 0px 2px no-repeat;
+	font-size: 9pt;
+	}
+
+#right_column {
+	background: black;
+	color: #000000;
+	vertical-align: top;
+	height: 600px;
+}
+
+#logo {
+	background: #000099;
+	height: 50px;
+	border-bottom: #FFFFFF solid 1px;	
+}
+
+#sc_content {
+	padding: 10px;
+	color: white;
+	font-size: 12px;
+}
+
+#sc_content p, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
+
+#sc_content h1, h3 {
+	color: #999999;
+}
+
+#sc_content h2, h4 {
+	color: #888888;
+}
+
+#sc_content #img_wrapper {
+	font-weight: bold;
+	font-size: 10pt;
+	text-align: center;
+	margin: 1px;
+    padding: 1px;
+}
+
+#sc_content A:link {
+	COLOR: white; text-decoration: underline
+}
+#sc_content A:visited {
+	COLOR: white; text-decoration: underline
+}
+#sc_content A:active {
+	COLOR: white; text-decoration: underline
+}
+#sc_content A:hover {
+	COLOR: white; text-decoration: none
+}
+
+#sc_content #img_wrapper img {
+	margin: 4px;
+	padding: 2px;
+	background: #FFFFFF;
+	border: 2px solid #505050;
+}
+
+#sc_content #formatted_table th {
+	background-color: #173259;
+	color: #FFFFFF;
+}
+
+#sc_content #formatted_table td {
+	background-color: #D9DDFF;
+}
+
+#sc_page_footer {
+	border-top: 1px solid #FFFFFF;
+	width: 960px;
+	background: #111111;
+	text-align: center;
+	font-size: 8pt;
+}
+
+#sc_drill_down {
+	background: #111111;
+	padding: 2px 2px 2px 2px;
+	margin-bottom: 5px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 9pt;
+	color: white;
+}
+
+#sc_drill_down a {
+	color: white;
+	text-decoration: none;
+}
+
+#sc_drill_down a:hover {
+	text-decoration: underline;
+}
+
+#sc_floating_section {
+	width: 140px;
+	text-align: left;
+	vertical-align: top;
+	float: right;
+	font-size: 8pt;
+	color: black;
+}
+
+#sc_floating_section h1 {
+	font-weight: bold;
+	font-size: 8pt;
+	text-align: center;
+	background-color: #333333;
+	color: white;
+	margin: 1px;
+    padding: 1px;
+}
+
+#sc_list_item {
+	width: 100%;
+	padding: 2px;
+	color: #000000;
+}
+
+#sc_list_item img {
+	border: 0px;
+	text-decoration: none;
+}
+
+#sc_list_item_image {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #D9DDFF;
+}
+
+#sc_list_item_description {
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px;
+	background-color: #D9DDFF;
+}
+
+#sc_list_item_description h1 a {
+	text-decoration: none;
+}
+
+#sc_list_item_description h1 {
+	font-size: 14px;
+	color: #000000;
+	margin: 0px;
+}
+
+#sc_list_item_description h2 {
+	font-size: 12px;
+	color: #000000;
+	margin: 0px;
+}
+
+#sc_list_heading {
+	text-align: left;
+	background:#122746;
+	color:#FFFFFF;
+	font-size: 16px;
+	padding: 3px;
+}
+
+#sc_list_image {
+	border: 0px;
+	text-align: center;
+	padding: 10px;
+}
+
+#sc_store_heading {
+	text-align: left;
+	background:#122746;
+	color:#FFFFFF;
+	font-size: 16px;
+	padding: 3px;
+}
+
+#sc_store_image {
+	border: 0px;
+	text-align: center;
+	padding: 10px;
+}
+
+#sc_store_order {
+	border: 1px solid #000000;
+}
+
+#sc_store_order_heading {
+	text-align: center;
+	background:#122746;
+	color:#FFFFFF;
+	font-size: 16px;
+	padding: 3px;
+}
+
+#sc_store_shopping_cart_table {
+	width: 100%;
+}
+
+#sc_store_shopping_cart_table_narrow {
+	width: 80%;
+}
+
+#sc_store_shopping_cart_heading {
+	background:#122746;
+	color:#FFFFFF;
+	font-size: 14px;
+	padding: 3px;
+}
+
+#sc_store_shopping_cart_item {
+	vertical-align: middle;
+	padding: 5px;
+	background-color: #D9DDFF;
+}
+
+#sc_store_shopping_cart_blank{
+	vertical-align: middle;
+	padding: 5px;
+}
+
+#sc_store_shopping_cart_item h1 {
+	font-size: 16px;
+	color: #000000;
+	margin: 0px;
+}
+
+#sc_store_shopping_cart_item h2 {
+	font-size: 11px;
+	color: #000000;
+	margin: 0px;
+}
+
+#sc_post {
+	margin: 5px 0px 5px 0px;
+	border-bottom: dotted 2px #333333;
+}
+
+#sc_post_date {
+	font-size: smaller;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 0px 10px 0px;
+}
+
+#sc_post_title {
+	font-size: large;
+	font-weight: bold;
+	margin: 10px 0px 10px 0px;
+}
