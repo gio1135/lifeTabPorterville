@@ -1,4 +1,11 @@
 @charset 'utf-8';
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
 ul.dropdown li {
   padding: 8px 6px 6px 6px;
   color: #DDDFDC;
