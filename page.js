@@ -6,7 +6,7 @@ function popUp(URL, width, height) {
 
 var req;
 
-/* function navigate(month,year,page_id,parent_level) {
+function navigate(month,year,page_id,parent_level) {
 	hide_popup();
 	var url = "calendar.php?PAGE_ID="+page_id+"&PARENT_LEVEL="+parent_level+"&month="+month+"&year="+year+"&rnd="+(new Date()).getTime();
 	if(window.XMLHttpRequest) {
@@ -17,7 +17,7 @@ var req;
 	req.open("GET", url, true);
 	req.onreadystatechange = callback;
 	req.send(null);
-} */
+}
 
 function callback() {
 	if(req.readyState == 4) {
@@ -101,12 +101,12 @@ function ajaxUpdateInnerHtml(ajaxDiv, ajaxHtml)
 	var new_type = document.getElementById(ajaxDiv).tagName;
 	var new_element = document.createElement(new_type);
 	new_element.innerHTML = ajaxHtml;
-	
+
 	var old_element = document.getElementById(ajaxDiv);
 	new_element.id = old_element.id;
 	new_element.style.cssText = old_element.style.cssText;
 	new_element.className = old_element.className;
-	
+
 	var container = document.getElementById(ajaxDiv).parentNode;
 	container.replaceChild(new_element, old_element);
 
@@ -127,9 +127,9 @@ function ajaxUpdateDivInner( ajaxDiv, ajaxUrl, func )
 		if(xmlHttp.readyState==4)
 		{
 			var response = xmlHttp.responseText;
-			
+
 			ajaxUpdateInnerHtml(ajaxDiv, response);
-			
+
 			if (func != null)
 				func();
 		}
@@ -158,20 +158,20 @@ function getMargin( e )
 function ajaxUpdateItem( itemDiv, itemUrl )
 {
 	var cacheBuster = Date.parse(new Date());
-	
+
 	var ajaxDivImg = document.getElementById(itemDiv + '_img');
 	if (ajaxDivImg == undefined)
 		return;
-	
+
 	var sc_width = ajaxDivImg.style.width;
 	var sc_height = ajaxDivImg.style.height;
 	var sc_margin = getMargin(ajaxDivImg);
 	var sc_align = getAlignment(ajaxDivImg);
-	
+
 	var itemID = ajaxDivImg.title;
-	
-	var ajaxUrl = itemUrl+'?ID=' + itemID + '&WIDTH=' + sc_width + '&HEIGHT=' + sc_height + '&ITEM_ID=' + itemDiv + '&time=' + cacheBuster; 
-	
+
+	var ajaxUrl = itemUrl+'?ID=' + itemID + '&WIDTH=' + sc_width + '&HEIGHT=' + sc_height + '&ITEM_ID=' + itemDiv + '&time=' + cacheBuster;
+
 	ajaxUpdateDivInner(itemDiv, ajaxUrl, function ()
 		{
 		  	sc_align = sc_align.toLowerCase();
@@ -186,7 +186,7 @@ function ajaxUpdateItem( itemDiv, itemUrl )
 		  		sc_align = 'none';
 		  	}
 	  		document.getElementById(itemDiv).style.marginBottom = sc_margin;
-		  	
+
 		  	document.getElementById(itemDiv).style.cssFloat = sc_align;
 		  	document.getElementById(itemDiv).style.styleFloat  = sc_align;
 		});
@@ -220,7 +220,7 @@ function sc_showPopup(itemDiv, itemObj, text)
 	popup.style.left = coors[0] + 'px';
 	while (text.indexOf("@@@") > -1)
 		text = text.replace("@@@", "\"");
-		
+
 	ajaxUpdateInnerHtml(itemDiv, text);
 
 	sc_stopTimer();
