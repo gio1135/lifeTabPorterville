@@ -1,1 +1,52 @@
 @charset 'utf-8';
+ul.dropdown li {
+  padding: 8px 6px 6px 6px;
+  color: #DDDFDC;
+  border: 0px;
+  background-color: #656565;
+}
+
+ul.dropdown ul {
+  width: 150px;
+  margin-top: 0px;
+  border-top: 1px solid #4E5350;
+  border-left: 1px solid #4E5350;
+  border-right: 1px solid #4E5350;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+  color: #FFFFFF;
+  background-color: #0F2F86;
+}
+
+ul.dropdown a:link,
+ul.dropdown a:visited {
+  color: #DDDFDC;
+}
+
+ul.dropdown a:hover {
+  color: #FFFFFF;
+}
+
+ul.dropdown a:active {
+  color: #DDDFDC;
+}
+
+ul.dropdown ul li {
+  background-color: #656565;
+  border-bottom: 1px solid #4E5350;
+}
+
+ul.dropdown ul li.hover,
+ul.dropdown ul li:hover {
+  background-color: #0F2F86;
+}
+
+li.dropdown-toplevel {
+  background: url(images/img3.gif) repeat-x;
+}
+
+li.dropdown-toplevel:hover {
+  background: url(images/img4.gif) repeat-x;
+}
