@@ -6,7 +6,7 @@ function popUp(URL, width, height) {
 
 var req;
 
-function navigate(month,year,page_id,parent_level) {
+/* function navigate(month,year,page_id,parent_level) {
 	hide_popup();
 	var url = "calendar.php?PAGE_ID="+page_id+"&PARENT_LEVEL="+parent_level+"&month="+month+"&year="+year+"&rnd="+(new Date()).getTime();
 	if(window.XMLHttpRequest) {
@@ -17,7 +17,7 @@ function navigate(month,year,page_id,parent_level) {
 	req.open("GET", url, true);
 	req.onreadystatechange = callback;
 	req.send(null);
-}
+} */
 
 function callback() {
 	if(req.readyState == 4) {
