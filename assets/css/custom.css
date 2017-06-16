@@ -1,0 +1,206 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto|Roboto+Condensed|Product+Sans|BenchNine|Engagement');
+body {
+  min-height: 100vh;
+  background-color: #ddd;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+nav a, nav .brand-logo, nav ul a {
+  color: rgb(0, 0, 0);
+}
+nav a {
+  font-family: 'Product Sans';
+}
+
+/* Gives hamburger button roundness */
+nav .button-collapse {
+  border-radius: 50%;
+  padding: 0 16px;
+}
+@media only screen and (min-width: 601px) {
+  nav .button-collapse {
+    border-radius: 50%;
+    padding: 0 20px;
+  }
+}
+.tap-target-origin {
+  color: rgb(0, 0, 0);
+}
+
+#nav-mobile {
+  transition: box-shadow 0.2s ease-in-out;
+}
+#nav-mobile[style],
+#nav-mobile[style^="transform: translateX(-1"],
+#nav-mobile[style^="transform: translateX(-2"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.44),
+    0 1px 5px 0 rgba(0, 0, 0, 0.42),
+    0 3px 1px -2px rgba(0, 0, 0, 0.5),
+    0 0 0 105vw rgba(0, 0, 0, 0.3);
+}
+#nav-mobile[style^="transform: translateX(-3"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.44),
+    0 1px 5px 0 rgba(0, 0, 0, 0.42),
+    0 3px 1px -2px rgba(0, 0, 0, 0.5),
+    0 0 0 105vw rgba(0, 0, 0, 0);
+}
+#nav-mobile[style^="transform: translateX(-100%)"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0),
+    0 1px 5px 0 rgba(0, 0, 0, 0),
+    0 3px 1px -2px rgba(0, 0, 0, 0),
+    0 0 0 105vw rgba(0, 0, 0, 0);
+}
+.background img {
+  width: 100%;
+}
+#sidenav-overlay {
+  display: none;
+}
+.drag-target {
+  width: 20px;
+}
+
+/* FAB */
+.btn-floating {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14),
+    0 4px 8px rgba(0, 0, 0, 0.28);
+}
+.btn-floating:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16),
+    0 6px 12px rgba(0, 0, 0, 0.32);
+}
+.btn-floating img {
+  margin-top: 10%;
+  padding: 10%;
+  width: 80%;
+}
+.btn-floating.allo {
+  background-color: #f4b709;
+}
+.btn-floating.wap {
+  background-color: #25D366;
+}
+.btn-floating.sms {
+  background-color: #305bc8;
+}
+.btn-floating.mail {
+  background-color: #dc483c;
+}
+
+/* the actual pages */
+article {
+  padding: 0 60px 60px 60px !important;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-family: 'BenchNine';
+}
+article h2 {
+  margin-bottom:0 ;
+}
+article p.intro br {
+  line-height: 3;
+}
+article p.subtitle {
+  margin-top: 0;
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  color: rgb(50, 50, 50);
+}
+
+.card-image .card-title {
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+/*
+  ==============================================================================
+  Timeline
+  ==============================================================================
+*/
+.timeline {
+  position: relative;
+}
+.timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
+.timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: 0;
+}
+.timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+.timeline .timeline-event:first-child::before {
+  display: none;
+}
+.timeline .timeline-event:last-child::after {
+  display: none;
+}
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+.timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #d2d2d2;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default;
+}
+.timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+@media (max-width: 600px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px);
+  }
+  .timeline .timeline-event::before {
+    left: 19px;
+  }
+  .timeline .timeline-event::after {
+    left: 19px;
+  }
+  .timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-badge {
+    left: 0;
+  }
+}
