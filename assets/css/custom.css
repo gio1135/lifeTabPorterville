@@ -8,6 +8,10 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+nav {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14),
+    0 4px 8px rgba(0, 0, 0, 0.28);
+}
 nav a, nav .brand-logo, nav ul a {
   color: rgb(0, 0, 0);
 }
@@ -113,6 +117,17 @@ article p.subtitle {
 .card-image .card-title {
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 1px black;
+  /* Simulated effect for Firefox and Opera and nice enhancement for WebKit */
+  text-shadow: -1px -1px 0 rgb(0, 0, 0),
+  0 -1px 0 rgb(0, 0, 0),
+  1px -1px 0 rgb(0, 0, 0),
+  1px 0 0 rgb(0, 0, 0),
+  1px 1px 0 rgb(0, 0, 0),
+  0 1px 0 rgb(0, 0, 0),
+  -1px 1px 0 rgb(0, 0, 0),
+  -1px 0 0 rgb(0, 0, 0),
+  0 2px 4px rgba(0, 0, 0, 0.8);
 }
 /*
   ==============================================================================
