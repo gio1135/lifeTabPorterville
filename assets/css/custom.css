@@ -19,6 +19,13 @@ nav a {
   font-family: 'Product Sans';
 }
 
+nav .tab a {
+  color: rgb(244, 67, 54) !important;
+}
+nav .indicator {
+  background-color: rgb(244, 67, 54) !important;
+}
+
 @media only screen and (min-width: 601px) {
   nav .button-collapse {
     border-radius: 50%;
@@ -90,30 +97,16 @@ nav a {
 }
 
 /* the actual pages */
-article {
-  padding: 0 60px 60px 60px !important;
-}
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
-  font-family: 'BenchNine';
-}
-article h2 {
-  margin-bottom:0 ;
-}
-article p.intro br {
-  line-height: 3;
-}
-article p.subtitle {
-  margin-top: 0;
-  font-family: 'Roboto Condensed';
-  font-style: italic;
-  color: rgb(50, 50, 50);
+main .container {
+  margin-top: 68px;
 }
 
+.container .card {
+  padding: 1rem 2rem;
+}
+.container .card h1 {
+  font-size: 3rem;
+}
 .card-image .card-title {
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);

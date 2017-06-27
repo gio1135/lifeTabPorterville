@@ -29,12 +29,12 @@
   </head>
   <body>
     <header class='navbar-fixed'>
-      <nav class='white' role='navigation'>
+      <nav class='nav-extended white' role='navigation'>
         <div class='nav-wrapper container'>
           <a id='logo-container' href='../' class='brand-logo'>Life Tabernacle</a>
           <ul class='right hide-on-med-and-down'>
             <li><a href='../' class='waves-effect'>Home</a></li>
-            <li><a href='../page.php%3FID=5.html' class='waves-effect'>Our beliefs</a></li>
+            <li><a href='../belief/' class='waves-effect'>Our beliefs</a></li>
             <li><a href='./' class='waves-effect'>Past events</a></li>
             <li><a href='../page.php%3FID=9.html' class='waves-effect'>Contact us</a></li>
           </ul>!
@@ -50,26 +50,38 @@
               </div>
             </li>
             <li><a href='../' class='waves-effect waves-red'>Home</a></li>
-            <li><a href='../page.php%3FID=5.html' class='waves-effect waves-red'>Our beliefs</a></li>
+            <li><a href='../belief/' class='waves-effect waves-red'>Our beliefs</a></li>
             <li><a href='./' class='waves-effect waves-red'>Past events</a></li>
             <li><a href='../page.php%3FID=9.html' class='waves-effect waves-red'>Contact us</a></li>
           </ul>
           <a href='#!' data-activates='nav-mobile' id='hamburger' class='button-collapse'><i class='material-icons'>menu</i></a>
+          <ul class='tabs tabs-fixed-width'>
+            <li class='tab col s3'><a href='#2017'>2017</a></li>
+            <li class='tab col s3'><a href='#2015'>2015</a></li>
+            <li class='tab col s3'><a href='#2014'>2014</a></li>
+            <li class='tab col s3'><a href='#2013'>2013</a></li>
+            <li class='tab col s3'><a href='#2012'>2012</a></li>
+            <li class='tab col s3'><a href='#2011'>2011</a></li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class='container'>
-        <table class='card bordered'>
+        <table id='2017' class='card bordered'>
           <tr>
             <th>Date</th>
             <th>Event</th>
           </tr>
           <tr>
-            <a href=''>
-              <td>6&#47;19&ndash;24&#47;2017</td>
-              <td>Pacific Coast Camp</td>
-            </a>
+            <td><a href='../pcc/'>6&#47;19&ndash;24&#47;2017</a></td>
+            <td><a href='../pcc/'>Pacific Coast Camp</a></td>
+          </tr>
+        </table>
+        <table id='2015' class='card bordered'>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
           </tr>
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1552.html'>11&#47;22&#47;2015</a></td>
@@ -182,6 +194,11 @@
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1324.html'>3&#47;5&#47;2015</a></td>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1324.html'>Missions Conference &lpar;Fresno, CA&rpar;</a></td>
+          </tr>
+        <table id='2014' class='card bordered'>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
           </tr>
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1321.html'>12&#47;21&#47;2014</a></td>
@@ -326,6 +343,12 @@
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1027.html'>1&#47;5&#47;2014</a></td>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1027.html'>Baby Dedication</a></td>
+          </tr>
+        </table>
+        <table id='2013' class='card bordered'>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
           </tr>
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=1004.html'>12&#47;22&#47;2013</a></td>
@@ -486,6 +509,12 @@
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=696.html'>2&#47;3&#47;2013</a></td>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=696.html'>Special Service with Bro. Rick Bray</a></td>
+          </tr>
+        </table>
+        <table id='2012' class='card bordered'>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
           </tr>
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=612.html'>12&#47;23&#47;2012</a></td>
@@ -719,6 +748,12 @@
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=306.html'>1&#47;22&#47;2012</a></td>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=306.html'>Sunday School Crusade</a></td>
           </tr>
+        </table>
+        <table id='2011' class='card bordered'>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+          </tr>
           <tr>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=263.html'>12&#47;25&#47;2011</a></td>
             <td><a href='../page.php%3FTYPE=EVENT&amp;ID=263.html'>Christmas Service</a></td>
@@ -924,7 +959,7 @@
           <div class='col l4 offset-l2 s12'>
             <h5 class='white-text'>Links</h5>
             <ul>
-              <li><a class='grey-text text-lighten-3' href='../past-events/'>Old version</a></li>
+              <li><a class='grey-text text-lighten-3' href='../past-events.html'>Old version</a></li>
             </ul>
           </div>
         </div>

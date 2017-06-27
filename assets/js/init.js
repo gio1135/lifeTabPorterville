@@ -29,6 +29,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
+  $('ul.tabs').tabs();
 });
 
 // FAB
@@ -43,5 +44,5 @@ jQuery(document).ready(function($){
 	$('.btn-floating').on('click', function(){
 		$('html, body').animate({scrollTop:0}, 'fast');
 		return false;
-		});
+	});
 });
