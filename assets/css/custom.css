@@ -101,7 +101,7 @@ main .container {
   margin-top: 68px;
 }
 
-.container .card {
+article.container .card {
   padding: 1rem 2rem;
 }
 .container .card h1 {
