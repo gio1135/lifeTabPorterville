@@ -101,12 +101,19 @@ main .container {
   margin-top: 68px;
 }
 
+#map {
+  border: 0;
+  height: 300px;
+  width: 100%;
+}
+
 article.container .card {
   padding: 1rem 2rem;
 }
 .container .card h1 {
   font-size: 3rem;
 }
+
 .card-image .card-title {
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
@@ -121,6 +128,13 @@ article.container .card {
   -1px 1px 0 rgb(0, 0, 0),
   -1px 0 0 rgb(0, 0, 0),
   0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.collection-item .title {
+  color: rgb(33, 33, 33);
+}
+.collection-item p {
+  color: rgb(74, 74, 74) !important;
 }
 /*
   ==============================================================================
