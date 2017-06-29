@@ -83,18 +83,6 @@ nav .indicator {
   padding: 10%;
   width: 80%;
 }
-.btn-floating.allo {
-  background-color: #f4b709;
-}
-.btn-floating.wap {
-  background-color: #25D366;
-}
-.btn-floating.sms {
-  background-color: #305bc8;
-}
-.btn-floating.mail {
-  background-color: #dc483c;
-}
 
 /* the actual pages */
 main .container {
