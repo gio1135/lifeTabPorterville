@@ -46,3 +46,8 @@ jQuery(document).ready(function($){
 		return false;
 	});
 });
+
+// Swipebox
+;(function($) {
+	$('.swipebox').swipebox();
+})(jQuery);
