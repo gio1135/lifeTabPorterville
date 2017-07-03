@@ -69,7 +69,11 @@ nav .indicator {
   width: 20px;
 }
 
-/* FAB */
+/*
+  ==============================================================================
+  FAB
+  ==============================================================================
+*/
 .btn-floating {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14),
     0 4px 8px rgba(0, 0, 0, 0.28);
@@ -85,7 +89,7 @@ nav .indicator {
 }
 
 /* the actual pages */
-main .container {
+.tabbed {
   margin-top: 68px;
 }
 
@@ -208,4 +212,20 @@ article.container .card {
   .timeline .timeline-badge {
     left: 0;
   }
+}
+
+/*
+  ==============================================================================
+  Live photos
+  ==============================================================================
+*/
+span[data-live-photo] {
+	vertical-align: middle;
+	width: 100%;
+	height: 90vh;
+}
+.lpk-live-photo-renderer, .lpk-badge {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
