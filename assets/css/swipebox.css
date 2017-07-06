@@ -3,7 +3,7 @@ html.swipebox-html.swipebox-touch {
   overflow: hidden !important;
 }
 
-#swipebox-overlay img {
+#swipebox-overlay img, {
   border: none !important;
 }
 
@@ -64,6 +64,9 @@ html.swipebox-html.swipebox-touch {
   width: auto;
   height: auto;
   vertical-align: middle;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 #swipebox-slider .slide .swipebox-video-container {
   background: none;
@@ -89,7 +92,7 @@ html.swipebox-html.swipebox-touch {
   left: 0;
 }
 #swipebox-slider .slide-loading {
-  background: url(../images/loader.gif) no-repeat center center;
+  background: url(../images/loader.svg) no-repeat center center;
 }
 
 #swipebox-bottom-bar,
@@ -277,18 +280,19 @@ html.swipebox-html.swipebox-touch {
 /* Skin 
 --------------------------*/
 #swipebox-overlay {
-  background: #0d0d0d;
+  background: #eee;
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
   text-shadow: 1px 1px 1px black;
-  background: #000;
+  background: #fff;
   opacity: 0.95;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.14),
+    0 -2px 4px rgba(0, 0, 0, 0.28);
 }
 
 #swipebox-top-bar {
-  color: white !important;
   font-size: 15px;
   line-height: 43px;
   font-family: Helvetica, Arial, sans-serif;
