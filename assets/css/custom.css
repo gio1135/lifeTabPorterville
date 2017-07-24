@@ -93,9 +93,9 @@ nav .indicator {
   margin-top: 68px;
 }
 
-#map {
+.map {
   border: 0;
-  height: 300px;
+  height: 425px;
   width: 100%;
 }
 
