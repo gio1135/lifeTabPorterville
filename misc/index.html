@@ -3,9 +3,24 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Contact us</title>
+    <script type='application/ld+json'>
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "http://lifetabporterville.org/misc/",
+            "name": "Miscellaneous"
+          }
+        }]
+      }
+    </script>
+    <title>Miscellaneous</title>
     <link type='text/css' rel='stylesheet' href='../assets/css/materialize.css'  media='screen,projection'>
     <link type='text/css' rel='stylesheet' href='../assets/css/custom.css'  media='screen,projection'>
+    <link type='text/css' rel='stylesheet' href='../assets/css/swipebox.css'  media='screen,projection'>
     <!-- Favicon -->
     <link rel='apple-touch-icon' sizes='57x57' href='../assets/favicon/apple-touch-icon-57x57.png'>
     <link rel='apple-touch-icon' sizes='60x60' href='../assets/favicon/apple-touch-icon-60x60.png'>
@@ -37,8 +52,8 @@
             <li><a href='../belief/' class='waves-effect'>Our beliefs</a></li>
             <li><a href='../past-events/' class='waves-effect'>Past events</a></li>
             <li><a href='../misc/' class='waves-effect'>Miscellaneous</a></li>
-            <li><a href='./' class='waves-effect'>Contact us</a></li>
-          </ul>!
+            <li><a href='../contact/' class='waves-effect'>Contact us</a></li>
+          </ul>
           <ul id='nav-mobile' class='side-nav'>
             <li>
               <div class='userView'>
@@ -54,43 +69,21 @@
             <li><a href='../belief/' class='waves-effect waves-red'>Our beliefs</a></li>
             <li><a href='../past-events/' class='waves-effect waves-red'>Past events</a></li>
             <li><a href='../misc/' class='waves-effect'>Miscellaneous</a></li>
-            <li><a href='./' class='waves-effect waves-red'>Contact us</a></li>
+            <li><a href='../contact/' class='waves-effect waves-red'>Contact us</a></li>
           </ul>
           <a href='#!' data-activates='nav-mobile' id='hamburger' class='button-collapse'><i class='material-icons'>menu</i></a>
         </div>
       </nav>
     </header>
-    <main class='container'>
-      <div class='row'>
+    <main>
+      <div class='container'>
+        <!-- The river -->
         <div class='col s12'>
           <div class='card'>
             <div class='card-image'>
-              <iframe class='map' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6448.868436939233!2d-119.0221080443325!3d36.08290182000704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80eab8229dfb2867%3A0x613b8ad99dd1f44!2sLife+Tabernacle+Apostolic+Church!5e0!3m2!1sen!2sus!4v1498613927445' height='350' frameborder='0' allowfullscreen></iframe>
-            </div>
-            <div class='card-content'>
-              <div class='collection with-header'>
-                <a class='collection-item avatar waves-effect waves-red' href='https://goo.gl/maps/zEYKv5n7Qsx' target='_blank'>
-                  <i class='material-icons circle red'>business</i>
-                  <span class='title'>Address</span>
-                  <p>939 N Main St, Porterville, CA 93257</p>
-                </a>
-                <a class='collection-item avatar waves-effect waves-red' href='https://goo.gl/maps/my92QvDQmM82' target='_blank'>
-                  <i class='material-icons circle red'>markunread_mailbox</i>
-                  <span class='title'>Mailing address</span>
-                  <p>1279 W. Henderson Avenue #260, Porterville, CA 93257-1454</p>
-                </a>
-                <a class='collection-item avatar waves-effect waves-red' href='mailto:lifetabporterville@gmail.com' target='_blank'>
-                  <i class='material-icons circle red'>email</i>
-                  <span class='title'>Email</span>
-                  <p>lifetabporterville&#64;gmail.com</p>
-                </a>
-                <a class='collection-item avatar waves-effect waves-red' href='tel:1-559-781-8068'>
-                  <i class='material-icons circle red'>phone</i>
-                  <span class='title'>Phone number</span>
-                  <p>&lpar;559&rpar; 781&ndash;8068</p>
-                </a>
-                <p class='collection-header center'>Free transportation and home Bible studies available upon request!</p>
-              </div>
+              <a class='swipebox' href='../assets/images/coming-soon.jpg'>
+                <img src='../assets/images/coming-soon.jpg'>
+              </a>
             </div>
           </div>
         </div>
@@ -110,7 +103,7 @@
           <div class='col l4 offset-l2 s12'>
             <h5 class='white-text'>Links</h5>
             <ul>
-              <li><a class='grey-text text-lighten-3' href='../contact/'>Old version</a></li>
+              <li><a class='grey-text text-lighten-3' href='../past-events/'>Old version</a></li>
             </ul>
           </div>
         </div>
@@ -121,6 +114,8 @@
     </footer>
     <script type='text/javascript' src='../assets/js/jquery-2.1.1.js'></script>
     <script type='text/javascript' src='../assets/js/materialize.js'></script>
+    <script type='text/javascript' src='../assets/js/swipebox.js'></script>
+    <script type='text/javascript' src='../assets/js/ios-orientationchange-fix.js'></script>
     <script type='text/javascript' src='../assets/js/init.js'></script>
   </body>
 </html>
