@@ -29,7 +29,11 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
-  $('ul.tabs').tabs();
+  if ($('#tabs-bar').length) {
+    $('#tabs-bar').tabs({
+      'swipeable': true
+    });
+  }
 });
 
 // FAB
